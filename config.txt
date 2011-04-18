@@ -1,0 +1,98 @@
+This flag allows you to specify the minimum number of posts since the last scan for a thread to be considered active.
+[MINTHREADPOSTS]
+1
+
+This flag is the username to send automated PM's from
+[AUTOPMUSER]
+Touhou RP
+
+This flag is the password of the user to send automated PM's from
+[AUTOPMPASS]
+nope
+
+This message is the default message to send to players.
+The sequence of characters "%activity" in the message will be replaced by an activity message (either a strike message or a strike removed message as appropriate).
+The sequence of characters "%expired" in the message will be replaced by a message about expired hiatus time, if appropriate.
+The sequence of characters "%short" in the message will be replaced by a message about excessively short posts, if appropriate.
+The sequence fo characters "%long" in the message will be replaced by a message about excessively long posts, if appropriate.
+[MESSAGE]
+Here are the results of your last activity scan:
+
+%activity
+%expired
+%short
+%long
+[ENDMESSAGE]
+
+This message is the default message sent to people who have gotten an activity strike.
+The sequence of characters "%username" in the message will be replace by the character's name.
+The sequence of characters "%added" in the message will be replaced by the number of strikes added in this scan.
+The sequence of characters "%strikes" in teh message will be replaced by the current number of strikes that the character has.
+The sequence of characters "%threads" in the message will be replaced by a list of the threads that the player has stalled.
+[ACTIVITYSTRIKEMESSAGE]
+%username got %added activity strike(s) for failing to post in the following threads:
+%threads
+
+You now have %strikes activity strikes.
+[ENDMESSAGE]
+
+This is the form for stalled threads.
+The sequence of characters "%board" Will be replaced by the name of the forum that the stalled thread is in.
+The sequence of characters "%thread" will be replaced by the name of the stalled thread.
+[STALLEDTHREADFORM]
+Board: %board
+Thread: %thread
+[ENDMESSAGE]
+
+This message is the default message sent to people who have removed an activity strike, feel free to add as many lines as you want, the message will stop when [ENDMESSAGE] is reached.
+The sequence of characters "%username" in the message will be replace by the character's name.
+The sequence of characters "%strikes" in the message will be replaced by the current number of strikes.
+the sequence of characters "%scans" in the message will e replaced by the current number of scans that the character has passed.
+[STRIKEREMOVEDMESSAGE]
+%username had an activity strike removed, and has %strikes strikes remaining. Well done on your %scans consecutive good activity scans.
+[ENDMESSAGE]
+
+This message is the default message sent to people who have run out of hiatus time, feel free to add as many lines as you want, the message will stop when [ENDMESSAGE] is reached.
+The sequence of characters "%username" in the message will be replace by the character's name.
+[EXPIREDHIATUSMESSAGE]
+%username ran out of hiatus time, and has been taken out of hiatus status.
+[ENDMESSAGE]
+
+This message is the default message sent to people who have made a post less than 100 words, feel free to add as many lines as you want, the message will stop when [ENDMESSAGE] is reached.
+The sequence of characters "%username" in the message will be replace by the character's name.
+The sequence of characters "%posts" in the message will be replaced by a list of Short Post Forms representing all the short posts this user made.
+[SHORTPOSTMESSAGE]
+%username made some posts which are too short to count toward activity in the last scan, details are below:
+%posts
+[ENDMESSAGE]
+
+This message is the form for short posts.
+The sequence of characters "%board" Will be replaced by the name of the forum that the short post is in.
+The sequence of characters "%thread" will be replaced by the name of the thread that the short post is in.
+The sequence of characters "%words" will be replaced by the word count of the short post.
+[SHORTPOSTFORM]
+Board: %board
+Thread: %thread
+Word Count: %words
+[ENDMESSAGE]
+
+This message is the default message sent to people who have made a post longer than 750 words, feel free to add as many lines as you want, the message will stop when [ENDMESSAGE] is reached.
+The sequence of characters "%username" in the message will be replace by the character's name.
+The sequence of characters "%board" Will be replaced by the name of the forum that the long post is in.
+The sequence of characters "%thread" will be replaced by the name of the thread that the long post is in.
+[LONGPOSTMESSAGE]
+%username made some posts which are too long in the last scan, details are below:
+%posts
+
+Please be more considerate of your fellow players!
+[ENDMESSAGE]
+
+This message is the form for long posts.
+The sequence of characters "%board" Will be replaced by the name of the forum that the short post is in.
+The sequence of characters "%thread" will be replaced by the name of the thread that the short post is in.
+The sequence of characters "%words" will be replaced by the word count of the short post.
+[LONGPOSTFORM]
+Board: %board
+Thread: %thread
+Word Count: %words
+[ENDMESSAGE]

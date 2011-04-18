@@ -6,7 +6,8 @@ import javax.swing.table.AbstractTableModel;
 
 class StalledThreadTableModel extends AbstractTableModel {
 
-    //Define required variables
+	private static final long serialVersionUID = 1985733360235231431L;
+	//Define required variables
     String[] columnNames = {"Board", "Thread Name", "View Thread", "Assigned To Character", "Last Poster", "Second-Last Poster", "Third-Last Poster"};
     public static Vector<StalledThread> threads = new Vector<StalledThread>();
 
@@ -44,7 +45,7 @@ class StalledThreadTableModel extends AbstractTableModel {
     }
 
     @Override
-    public Class getColumnClass(int col) {
+    public Class<?> getColumnClass(int col) {
         return getValueAt(0, col).getClass();
     }
 

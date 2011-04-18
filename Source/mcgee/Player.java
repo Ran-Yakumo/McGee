@@ -3,7 +3,7 @@ package mcgee;
 import java.util.HashSet;
 
 //This keeps all the relevant data on a player
-public class Player implements Comparable {
+public class Player implements Comparable<Player> {
 
     //Working private members
     private String main;
@@ -305,7 +305,7 @@ public class Player implements Comparable {
         }
     }
 
-    public int compareTo(Object other) {
-        return this.main.compareTo(((Player)other).getMain());
+    public int compareTo(Player other) {
+        return this.main.compareTo(other.getMain());
     }
 }

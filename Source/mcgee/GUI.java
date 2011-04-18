@@ -353,7 +353,7 @@ public class GUI {
         Container content = frame.getContentPane();
 
         //Adds field to edit the message
-        final JTextArea message = new JTextArea(PMTableModel.PMs.get(row).getMessage());
+        final JTextArea message = new JTextArea(AutoPMTableModel.PMs.get(row).getMessage());
         JScrollPane scrollPane = new JScrollPane(message);
         content.add(scrollPane, BorderLayout.CENTER);
 
@@ -368,7 +368,7 @@ public class GUI {
 
             public void actionPerformed(ActionEvent e) {
                 if (e.getActionCommand().equals("OK")) {
-                    PMTableModel.PMs.get(row).setMessage(message.getText());
+                    AutoPMTableModel.PMs.get(row).setMessage(message.getText());
                 }
                 //Close the frame
                 frame.setVisible(false);

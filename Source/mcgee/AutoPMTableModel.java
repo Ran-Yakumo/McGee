@@ -5,8 +5,9 @@ import java.util.ArrayList;
 import javax.swing.table.AbstractTableModel;
 
 class AutoPMTableModel extends AbstractTableModel {
-    
-    String[] columnNames = {"Recipient", "Subject", "Edit Message", "Send PM", "Status"};
+
+	private static final long serialVersionUID = -4173653588807402428L;
+	String[] columnNames = {"Recipient", "Subject", "Edit Message", "Send PM", "Status"};
     public static ArrayList<AutoPM> PMs = new ArrayList<AutoPM>();
 
     public int getColumnCount() {
@@ -41,7 +42,7 @@ class AutoPMTableModel extends AbstractTableModel {
     }
 
     @Override
-    public Class getColumnClass(int col) {
+    public Class<?> getColumnClass(int col) {
         return getValueAt(0, col).getClass();
     }
 

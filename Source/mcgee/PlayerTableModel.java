@@ -10,7 +10,8 @@ import javax.swing.table.AbstractTableModel;
 
 class PlayerTableModel extends AbstractTableModel {
 
-    String[] columnNames = {"Main", "Alt", "Secondary", "Active Threads", "Last IC Post Time", "Last IC Post Thread", "Last IC Post Board", "Stalled Threads", "Strikes", "Consecutive Scans Passed", "On Hiatus", "Hiatus Weeks Remaining"};
+	private static final long serialVersionUID = 7559688232320866013L;
+	String[] columnNames = {"Main", "Alt", "Secondary", "Active Threads", "Last IC Post Time", "Last IC Post Thread", "Last IC Post Board", "Stalled Threads", "Strikes", "Consecutive Scans Passed", "On Hiatus", "Hiatus Weeks Remaining"};
     private static ArrayList<Player> players = new ArrayList<Player>();
     private static HashMap<String, Player> mainMap = new HashMap<String, Player>();
     private static HashMap<String, Player> altMap = new HashMap<String, Player>();
@@ -34,7 +35,7 @@ class PlayerTableModel extends AbstractTableModel {
     }
 
     @Override
-    public Class getColumnClass(int col) {
+    public Class<?> getColumnClass(int col) {
         return getValueAt(0, col).getClass();
     }
 

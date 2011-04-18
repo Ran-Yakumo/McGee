@@ -10,8 +10,10 @@ import javax.swing.table.AbstractTableModel;
 
 class PlayerTableModel extends AbstractTableModel {
 
-	private static final long serialVersionUID = 7559688232320866013L;
-	String[] columnNames = {"Main", "Alt", "Secondary", "Active Threads", "Last IC Post Time", "Last IC Post Thread", "Last IC Post Board", "Stalled Threads", "Strikes", "Consecutive Scans Passed", "On Hiatus", "Hiatus Weeks Remaining"};
+    private static final long serialVersionUID = 7559688232320866013L;
+    String[] columnNames = { "Main", "Alt", "Secondary", "Active Threads", "Last IC Post Time", "Last IC Post Thread",
+            "Last IC Post Board", "Stalled Threads", "Strikes", "Consecutive Scans Passed", "On Hiatus",
+            "Hiatus Weeks Remaining" };
     private static ArrayList<Player> players = new ArrayList<Player>();
     private static HashMap<String, Player> mainMap = new HashMap<String, Player>();
     private static HashMap<String, Player> altMap = new HashMap<String, Player>();
@@ -49,7 +51,8 @@ class PlayerTableModel extends AbstractTableModel {
 
     @Override
     public void setValueAt(Object value, int row, int col) {
-        //If this is the main, alt, or secondary, update the mapping appropriately
+        // If this is the main, alt, or secondary, update the mapping
+        // appropriately
         if (col == 0) {
             mainMap.remove(players.get(row).getMain());
             mainMap.put((String) value, players.get(row));
@@ -65,25 +68,25 @@ class PlayerTableModel extends AbstractTableModel {
         fireTableCellUpdated(row, col);
     }
 
-    //Says whether a certain player is in the table or not
+    // Says whether a certain player is in the table or not
     public boolean containsPlayer(String in) {
-        //Check to be sure that this is not someone testing for "None"
+        // Check to be sure that this is not someone testing for "None"
         if (in.equals("None")) {
             return false;
         }
 
-        //Get the name of the player's main and test the name map
+        // Get the name of the player's main and test the name map
         if (mainMap.containsKey(in) || altMap.containsKey(in) || secMap.containsKey(in)) {
             return true;
         }
 
-        //Player was not found, return false
+        // Player was not found, return false
         return false;
     }
 
-    //Gets the player using character name
+    // Gets the player using character name
     public Player getPlayerByName(String in) {
-        //Get the player object from one of the maps
+        // Get the player object from one of the maps
         if (mainMap.containsKey(in)) {
             return mainMap.get(in);
         } else if (altMap.containsKey(in)) {
@@ -95,54 +98,57 @@ class PlayerTableModel extends AbstractTableModel {
         }
     }
 
-    //Puts a new player into the table
+    // Puts a new player into the table
     public void addPlayer(Player toAdd) {
 
-        //Update the mappings and create the player object
+        // Update the mappings and create the player object
         mainMap.put(toAdd.getMain(), toAdd);
         altMap.put(toAdd.getAlt(), toAdd);
         secMap.put(toAdd.getSec(), toAdd);
 
-        //Insert the player into the table
+        // Insert the player into the table
         players.add(toAdd);
         Collections.sort(players);
 
-        //Update all the indices
+        // Update all the indices
         for (int i = 0; i < players.size(); i++) {
             players.get(i).setIndex(i);
         }
 
-        //Fire the row inserted event to ensure that the player appears in the table
+        // Fire the row inserted event to ensure that the player appears in the
+        // table
         fireTableRowsInserted(toAdd.getIndex(), toAdd.getIndex() + 1);
     }
 
-    //Removes a player from the table
+    // Removes a player from the table
     public void dropPlayer(Player toDrop) {
-        //Update the mappings
+        // Update the mappings
         mainMap.remove(toDrop.getMain());
         altMap.remove(toDrop.getAlt());
         secMap.remove(toDrop.getSec());
 
-        //Update the table
+        // Update the table
         players.remove(toDrop);
         Collections.sort(players);
 
-        //Update all the indices
+        // Update all the indices
         for (int i = 0; i < players.size(); i++) {
             players.get(i).setIndex(i);
         }
 
-        //Fire the row deleted event to ensure that the player disappears in the table
+        // Fire the row deleted event to ensure that the player disappears in
+        // the table
         fireTableRowsDeleted(toDrop.getIndex(), toDrop.getIndex() + 1);
     }
 
-    //Prepares for a scan.
+    // Prepares for a scan.
     public void readyForScan() {
         for (Player current : players) {
-            //Prepares the thread counts
+            // Prepares the thread counts
             current.setThreads(0);
 
-            //If this person is on hiatus, make sure they have some hiatus time left, and excuse them from the scan if they do
+            // If this person is on hiatus, make sure they have some hiatus time
+            // left, and excuse them from the scan if they do
             if (current.getOnHiatus()) {
                 if (current.getHiatusWeeksRemaining() > 0) {
                     current.decrementHiatusWeeksRemaining();
@@ -155,12 +161,12 @@ class PlayerTableModel extends AbstractTableModel {
         }
     }
 
-    //Finishes a scan.
+    // Finishes a scan.
     public void finishScan() {
-        //Update everythign in the table, many things changed during the scan
+        // Update everythign in the table, many things changed during the scan
         fireTableDataChanged();
 
-        //Generate all AutoPM's
+        // Generate all AutoPM's
         for (Player current : players) {
             if (!current.getOnHiatus()) {
                 GUI.PMTableModel.addPM(new AutoPM(current, "Activity Scan Results"));
@@ -168,16 +174,16 @@ class PlayerTableModel extends AbstractTableModel {
         }
     }
 
-    //Dumps the current table into a file for safekeeping
+    // Dumps the current table into a file for safekeeping
     public void DumpPlayerFile() {
         try {
-            //Allocate resources
+            // Allocate resources
             FileWriter outFile = new FileWriter("players.txt");
             outFile.write(Main.CurrentTime + "\r\n");
 
-            //Output the current table to a file
+            // Output the current table to a file
             for (Player current : players) {
-                //Output this player's parameters to the file
+                // Output this player's parameters to the file
                 outFile.write(current.getMain() + "\r\n");
                 outFile.write(current.getAlt() + "\r\n");
                 outFile.write(current.getSec() + "\r\n");
@@ -191,7 +197,7 @@ class PlayerTableModel extends AbstractTableModel {
                 outFile.write(current.getHiatusWeeksRemaining() + "\r\n");
             }
 
-            //Deallocate resources
+            // Deallocate resources
             outFile.flush();
             outFile.close();
         } catch (Exception e) {
@@ -202,11 +208,11 @@ class PlayerTableModel extends AbstractTableModel {
 
     public void DumpInactivePlayers(FileWriter OutFile) {
         try {
-            //Dump the names of all offening players
+            // Dump the names of all offening players
             OutFile.write("\r\nPlayers Who Have not Posted in Three Weeks or More:\r\n");
             for (Player current : players) {
                 if (Main.CurrentTime - Utilities.ParseDateString(current.getLastPostTime()) > 30240) {
-                OutFile.write(current.getMain() + "\r\n");
+                    OutFile.write(current.getMain() + "\r\n");
                 }
             }
         } catch (Exception e) {

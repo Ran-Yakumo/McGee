@@ -18,7 +18,7 @@ public class PageDownloader implements Runnable {
     }
 
     public void run() {
-        //Prepare to open the socket and perform GET
+        // Prepare to open the socket and perform GET
         Socket SKT = null;
         PrintWriter OutToSKT = null;
         BufferedReader FromSKT = null;
@@ -32,10 +32,10 @@ public class PageDownloader implements Runnable {
             OutToSKT = new PrintWriter(SKT.getOutputStream(), true);
             FromSKT = new BufferedReader(new InputStreamReader(SKT.getInputStream(), "UTF8"));
 
-            //Send the GET request
+            // Send the GET request
             OutToSKT.println(HTTPGetRequest);
 
-            //Read in the response
+            // Read in the response
             N = FromSKT.read(Buffer, 0, 4096);
             while (N > 0) {
                 String S = new String(Buffer, 0, N);
@@ -43,7 +43,7 @@ public class PageDownloader implements Runnable {
                 Wrapper[0] += S;
             }
 
-            //Close all streams, and then the socket connection
+            // Close all streams, and then the socket connection
             OutToSKT.close();
             FromSKT.close();
             SKT.close();

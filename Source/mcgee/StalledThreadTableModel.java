@@ -6,9 +6,10 @@ import javax.swing.table.AbstractTableModel;
 
 class StalledThreadTableModel extends AbstractTableModel {
 
-	private static final long serialVersionUID = 1985733360235231431L;
-	//Define required variables
-    String[] columnNames = {"Board", "Thread Name", "View Thread", "Assigned To Character", "Last Poster", "Second-Last Poster", "Third-Last Poster"};
+    private static final long serialVersionUID = 1985733360235231431L;
+    // Define required variables
+    String[] columnNames = { "Board", "Thread Name", "View Thread", "Assigned To Character", "Last Poster",
+            "Second-Last Poster", "Third-Last Poster" };
     public static Vector<StalledThread> threads = new Vector<StalledThread>();
 
     public int getColumnCount() {
@@ -25,16 +26,23 @@ class StalledThreadTableModel extends AbstractTableModel {
     }
 
     public Object getValueAt(int row, int col) {
-    	switch(col)
-    	{
-    		case 0: return threads.get(row).getBoard();
-    		case 1: return threads.get(row).getName();
-    		case 2: return false;
-    		case 3: return threads.get(row).getAssigned();
-    		case 4: return threads.get(row).getPoster(0);
-    		case 5: return threads.get(row).getPoster(1);
-    		case 6: return threads.get(row).getPoster(2);
-    		default: return null;
+        switch (col) {
+            case 0:
+                return threads.get(row).getBoard();
+            case 1:
+                return threads.get(row).getName();
+            case 2:
+                return false;
+            case 3:
+                return threads.get(row).getAssigned();
+            case 4:
+                return threads.get(row).getPoster(0);
+            case 5:
+                return threads.get(row).getPoster(1);
+            case 6:
+                return threads.get(row).getPoster(2);
+            default:
+                return null;
         }
     }
 
@@ -66,7 +74,8 @@ class StalledThreadTableModel extends AbstractTableModel {
     public String toString() {
         String toReturn = "";
         for (StalledThread current : threads) {
-            toReturn += "{" + current.getBoard() + "} (" + current.getName() + ") " + current.getPostersAsString() + "\r\n";
+            toReturn += "{" + current.getBoard() + "} (" + current.getName() + ") " + current.getPostersAsString()
+                    + "\r\n";
         }
         return toReturn;
     }

@@ -5,7 +5,7 @@ import java.util.HashSet;
 //This keeps all the relevant data on a player
 public class Player implements Comparable<Player> {
 
-    //Working private members
+    // Working private members
     private String main;
     private String alt;
     private String sec;
@@ -22,8 +22,10 @@ public class Player implements Comparable<Player> {
     private HashSet<BadPost> longPosts = new HashSet<BadPost>();
     private boolean expiredHiatus = false;
     private int index = -1;
-    
-    public Player(String inMain, String inAlt, String inSec, int inThreads, String inLastPostTime, String inLastPostThread, String inLastPostBoard, int inStrikes, int inGoodScans, boolean inOnHiatus, int inHiatusWeeksRemaining){
+
+    public Player(String inMain, String inAlt, String inSec, int inThreads, String inLastPostTime,
+            String inLastPostThread, String inLastPostBoard, int inStrikes, int inGoodScans, boolean inOnHiatus,
+            int inHiatusWeeksRemaining) {
         main = inMain;
         alt = inAlt;
         sec = inSec;
@@ -37,7 +39,7 @@ public class Player implements Comparable<Player> {
         hiatusWeeksRemaining = inHiatusWeeksRemaining;
     }
 
-    public String getMain(){
+    public String getMain() {
         return main;
     }
 
@@ -87,7 +89,7 @@ public class Player implements Comparable<Player> {
         int toReturn = goodScans;
         if (!assigned.isEmpty()) {
             return 0;
-        } else if(Main.scanDone && !onHiatus) {
+        } else if (Main.scanDone && !onHiatus) {
             toReturn += 1;
         }
         return toReturn;
@@ -141,15 +143,15 @@ public class Player implements Comparable<Player> {
         threads++;
     }
 
-    public void setLastPostTime (String inDate) {
+    public void setLastPostTime(String inDate) {
         lastPostTime = inDate;
     }
 
-    public void setLastPostThread (String inThread) {
+    public void setLastPostThread(String inThread) {
         lastPostThread = inThread;
     }
 
-    public void setLastPostBoard (String inBoard) {
+    public void setLastPostBoard(String inBoard) {
         lastPostBoard = inBoard;
     }
 
@@ -173,7 +175,7 @@ public class Player implements Comparable<Player> {
         }
     }
 
-    public void setOnHiatus(boolean inOnHiatus){
+    public void setOnHiatus(boolean inOnHiatus) {
         onHiatus = inOnHiatus;
     }
 
@@ -182,7 +184,7 @@ public class Player implements Comparable<Player> {
     }
 
     public void decrementHiatusWeeksRemaining() {
-        hiatusWeeksRemaining --;
+        hiatusWeeksRemaining--;
     }
 
     public void setExpiredHiatus(boolean in) {
@@ -193,7 +195,7 @@ public class Player implements Comparable<Player> {
         shortPosts.add(in);
     }
 
-    public void addLongPost (BadPost in) {
+    public void addLongPost(BadPost in) {
         longPosts.add(in);
     }
 
@@ -204,38 +206,27 @@ public class Player implements Comparable<Player> {
     public Object getValue(int col) {
         if (col == 0) {
             return getMain();
-        }
-        else if (col == 1) {
+        } else if (col == 1) {
             return getAlt();
-        }
-        else if (col == 2) {
+        } else if (col == 2) {
             return getSec();
-        }
-        else if (col == 3) {
+        } else if (col == 3) {
             return getThreads();
-        }
-        else if (col == 4) {
+        } else if (col == 4) {
             return getLastPostTime();
-        }
-        else if (col == 5) {
+        } else if (col == 5) {
             return getLastPostThread();
-        }
-        else if (col == 6) {
+        } else if (col == 6) {
             return getLastPostBoard();
-        }
-        else if (col == 7) {
+        } else if (col == 7) {
             return getStalledThreads();
-        }
-        else if (col == 8) {
+        } else if (col == 8) {
             return getStrikes();
-        }
-        else if (col == 9) {
+        } else if (col == 9) {
             return getGoodScans();
-        }
-        else if (col == 10) {
+        } else if (col == 10) {
             return getOnHiatus();
-        }
-        else if (col == 11) {
+        } else if (col == 11) {
             return getHiatusWeeksRemaining();
         }
         return null;
@@ -244,56 +235,52 @@ public class Player implements Comparable<Player> {
     public void setValue(int col, Object in) {
         if (col == 0) {
             setMain((String) in);
-        }
-        else if (col == 1) {
+        } else if (col == 1) {
             setAlt((String) in);
-        }
-        else if (col == 2) {
+        } else if (col == 2) {
             setSec((String) in);
-        }
-        else if (col == 3) {
+        } else if (col == 3) {
             setThreads((Integer) in);
-        }
-        else if (col > 3 && col < 8) {
+        } else if (col > 3 && col < 8) {
             return;
-        }
-        else if (col == 8) {
+        } else if (col == 8) {
             setStrikes((Integer) in);
-        }
-        else if (col == 9) {
+        } else if (col == 9) {
             setGoodScans((Integer) in);
-        }
-        else if (col == 10) {
+        } else if (col == 10) {
             setOnHiatus((Boolean) in);
-        }
-        else if (col == 11) {
+        } else if (col == 11) {
             setHiatusWeeksRemaining((Integer) in);
         }
     }
 
-    //Removes an assigned thread from a player
+    // Removes an assigned thread from a player
     public void removeThread(StalledThread in) {
-        //Remove the stalled thread from the set of threads assigned to this player
+        // Remove the stalled thread from the set of threads assigned to this
+        // player
         assigned.remove(in);
 
-        //Update the table with stalled threads, strikes, and consecutive good scans
+        // Update the table with stalled threads, strikes, and consecutive good
+        // scans
         GUI.playerTableModel.fireTableCellUpdated(index, 7);
         GUI.playerTableModel.fireTableCellUpdated(index, 8);
         GUI.playerTableModel.fireTableCellUpdated(index, 9);
     }
 
-    //Gives a strike to a player and takes care of all ramifications of doing so.
+    // Gives a strike to a player and takes care of all ramifications of doing
+    // so.
     public void assignThread(StalledThread in) {
-        //Add this thread to the list of assigned threads for this player
+        // Add this thread to the list of assigned threads for this player
         assigned.add(in);
 
-        //Update the table with stalled threads, strikes, and consecutive good scans
+        // Update the table with stalled threads, strikes, and consecutive good
+        // scans
         GUI.playerTableModel.fireTableCellUpdated(index, 7);
         GUI.playerTableModel.fireTableCellUpdated(index, 8);
         GUI.playerTableModel.fireTableCellUpdated(index, 9);
     }
 
-    //Updates the Last IC Post data for this player
+    // Updates the Last IC Post data for this player
     public void updateLastPost(String inTime, String inThread, String inBoard) {
         if (Utilities.ParseDateString(inTime) > Utilities.ParseDateString(lastPostTime)) {
             lastPostTime = inTime;

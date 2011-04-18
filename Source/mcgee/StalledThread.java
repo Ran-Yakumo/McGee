@@ -36,8 +36,7 @@ public class StalledThread {
     public String getPoster(int in) {
         if (in < posters.size()) {
             return posters.get(posters.size() - (in + 1));
-        }
-        else {
+        } else {
             return "None";
         }
     }
@@ -51,17 +50,17 @@ public class StalledThread {
     }
 
     public void setAssigned(String in) {
-        //If any player is currently assigned this thread, break the association
+        // If any player is currently assigned this thread, break the
+        // association
         if (GUI.playerTableModel.containsPlayer(assigned)) {
             GUI.playerTableModel.getPlayerByName(assigned).removeThread(this);
             assigned = "Not Assigned";
         }
-        //Form an association with this player if possible
+        // Form an association with this player if possible
         if (GUI.playerTableModel.containsPlayer(in)) {
             if (GUI.playerTableModel.getPlayerByName(in).getOnHiatus()) {
                 GUI.PrintLineToMainOutput("Player " + in + " is on hiatus. Not asigning stalled thread.");
-            }
-            else {
+            } else {
                 assigned = in;
                 GUI.playerTableModel.getPlayerByName(assigned).assignThread(this);
             }

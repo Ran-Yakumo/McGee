@@ -6,8 +6,8 @@ import javax.swing.table.AbstractTableModel;
 
 class AutoPMTableModel extends AbstractTableModel {
 
-	private static final long serialVersionUID = -4173653588807402428L;
-	String[] columnNames = {"Recipient", "Subject", "Edit Message", "Send PM", "Status"};
+    private static final long serialVersionUID = -4173653588807402428L;
+    String[] columnNames = { "Recipient", "Subject", "Edit Message", "Send PM", "Status" };
     public static ArrayList<AutoPM> PMs = new ArrayList<AutoPM>();
 
     public int getColumnCount() {
@@ -26,17 +26,13 @@ class AutoPMTableModel extends AbstractTableModel {
     public Object getValueAt(int row, int col) {
         if (col == 0) {
             return PMs.get(row).getRecipient().getMain();
-        }
-        else if (col == 1) {
+        } else if (col == 1) {
             return PMs.get(row).getSubject();
-        }
-        else if (col == 2) {
+        } else if (col == 2) {
             return false;
-        }
-        else if (col == 3) {
+        } else if (col == 3) {
             return PMs.get(row).getSend();
-        }
-        else {
+        } else {
             return PMs.get(row).getSent();
         }
     }
@@ -50,8 +46,7 @@ class AutoPMTableModel extends AbstractTableModel {
     public boolean isCellEditable(int row, int col) {
         if (col == 0 || col == 4) {
             return false;
-        }
-        else {
+        } else {
             return true;
         }
     }
@@ -61,39 +56,38 @@ class AutoPMTableModel extends AbstractTableModel {
         if (col == 1) {
             PMs.get(row).setSubject((String) value);
             fireTableCellUpdated(row, col);
-        }
-        else if (col == 2) {
+        } else if (col == 2) {
             GUI.messageEditDialog(row);
-        }
-        else if (col == 3) {
+        } else if (col == 3) {
             PMs.get(row).setSend((Boolean) value);
             fireTableCellUpdated(row, col);
         }
     }
 
-    //Clears the current table of all PM's
+    // Clears the current table of all PM's
     public void clearAll() {
         PMs.clear();
     }
 
-    //Adds a PM to the table
+    // Adds a PM to the table
     public void addPM(AutoPM in) {
         PMs.add(in);
     }
 
-    //Attempts to send all the PM's that are marked for sending
+    // Attempts to send all the PM's that are marked for sending
     public void sendPM() {
         for (int i = 0; i < PMs.size(); i++) {
             AutoPM current = PMs.get(i);
             if (current.getSend()) {
-                //Do final dynamic replacements right before sending.
+                // Do final dynamic replacements right before sending.
                 current.setMessage(current.getMessage().replaceAll("%activity", current.buildActivityMessage()));
 
-                //Replace all "[" and "]", they are apparently illegal characters
+                // Replace all "[" and "]", they are apparently illegal
+                // characters
                 current.setMessage(current.getMessage().replaceAll("\\[", "("));
                 current.setMessage(current.getMessage().replaceAll("\\]", ")"));
 
-                //Send the message
+                // Send the message
                 if (Utilities.SendAutomatedPM(current)) {
                     current.setSent("Success");
                 } else {

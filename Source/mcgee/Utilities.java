@@ -7,6 +7,10 @@ import java.net.URL;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
@@ -176,86 +180,23 @@ public class Utilities {
                 return 0;
             }
 
-            //Turn the date into a number of minutes since Jan 1, 2009
-            long Time = 0;
-
-            //Parse Year
-            int Year = Integer.parseInt(input.substring(input.indexOf(", ") + 2, input.indexOf(" ", input.indexOf(", ") + 2)).trim());
-
-            while(Year > 2009) {
-                //Add the time for Feb. 29th in leap years
-                if (Year % 4 == 0) {
-                    Time += 1440;
-                }
-
-                Year -= 1;
-                Time += 525600;
-            }
-
-            //Parse Month
-            String Month = input.substring(input.indexOf(" ") + 1, input.indexOf(" ", input.indexOf(" ") + 1)).trim();
-            
-            if (Month.equals("Jan")) {
-            }
-            else if (Month.equals("Feb")) {
-                Time = Time + 44640;
-            }
-            else if (Month.equals("Mar")) {
-                Time = Time + 40320 + 44640;
-            }
-            else if (Month.equals("Apr")) {
-                Time = Time + 44640 + 40320 + 44640;
-            }
-            else if (Month.equals("May")) {
-                Time = Time + 43200 + 44640 + 40320 + 44640;
-            }
-            else if (Month.equals("Jun")) {
-                Time = Time + 44640 + 43200 + 44640 + 40320 + 44640;
-            }
-            else if (Month.equals("Jul")) {
-                Time = Time + 43200 + 44640 + 43200 + 44640 + 40320 + 44640;
-            }
-            else if (Month.equals("Aug")) {
-                Time = Time + 44640 + 43200 + 44640 + 43200 + 44640 + 40320 + 44640;
-            }
-            else if (Month.equals("Sep")) {
-                Time = Time + 44640 + 44640 + 43200 + 44640 + 43200 + 44640 + 40320 + 44640;
-            }
-            else if (Month.equals("Oct")) {
-                Time = Time + 43200 + 44640 + 44640 + 43200 + 44640 + 43200 + 44640 + 40320 + 44640;
-            }
-            else if (Month.equals("Nov")) {
-                Time = Time + 44640 + 43200 + 44640 + 44640 + 43200 + 44640 + 43200 + 44640 + 40320 + 44640;
-            }
-            else if (Month.equals("Dec")) {
-                Time = Time + 43200 + 44640 + 43200 + 44640 + 44640 + 43200 + 44640 + 43200 + 44640 + 40320 + 44640;
-            }
-            else {
-                System.err.println("Unknown month format.");
-            }
-
-            //Parse Day
-            int Day = Integer.parseInt(input.substring(input.indexOf(" ", input.indexOf(" ") + 1), input.indexOf(",")).trim());
-            Time += ((Day -1) * 1440);
-
-            //Add time for AM or PM
-            if (input.contains("pm")) {
-                Time += 720;
-            }
-
-            //Parse Hour
-            int Hour = Integer.parseInt(input.substring(input.indexOf(" ", input.indexOf(", ") + 2),input.indexOf(":")).trim());
-            Hour = Hour % 12;
-            Time += (60 * Hour);
-
-            //Parse Minute
-            int Minute = Integer.parseInt(input.substring(input.indexOf(":") + 1, input.lastIndexOf(" ")).trim());
-            Time += Minute;
-
-            return Time;
-
+            /* Turn the date into a number of minutes since Jan 1, 2009.
+             * We should probably be doing something smarter here involving
+             * date classes and such, but for backwards-compatibility with
+             * existing player data files, we're just going to stick to
+             * outputting time since Jan 1, 2009 in minutes.
+             */
+            Date date = new SimpleDateFormat("EEE MMM dd, yyyy hh:mm aa", Locale.ENGLISH).parse(input);
+            Calendar cal = Calendar.getInstance();
+            cal.setTime(date);
+            long currentMillis = cal.getTimeInMillis();
+            cal.clear();
+            cal.set(2009, 0, 1, 0, 0, 0);
+            long previousMillis = cal.getTimeInMillis();
+            long minutesSince = (currentMillis - previousMillis) / (60*1000);
+            return minutesSince;
         } catch (Exception e) {
-            System.err.println("Crash in ParseDateString:");
+            System.err.println("Error in ParseDateString:");
             e.printStackTrace();
             return -1;
         }

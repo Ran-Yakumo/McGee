@@ -25,22 +25,16 @@ class StalledThreadTableModel extends AbstractTableModel {
     }
 
     public Object getValueAt(int row, int col) {
-        if (col == 0) {
-            return threads.get(row).getBoard();
-        } else if (col == 1) {
-            return threads.get(row).getName();
-        } else if (col == 2) {
-            return false;
-        } else if (col == 3) {
-            return threads.get(row).getAssigned();
-        } else if (col == 4) {
-            return threads.get(row).getPoster(0);
-        } else if (col == 5) {
-            return threads.get(row).getPoster(1);
-        } else if (col == 6) {
-            return threads.get(row).getPoster(2);
-        } else {
-            return null;
+    	switch(col)
+    	{
+    		case 0: return threads.get(row).getBoard();
+    		case 1: return threads.get(row).getName();
+    		case 2: return false;
+    		case 3: return threads.get(row).getAssigned();
+    		case 4: return threads.get(row).getPoster(0);
+    		case 5: return threads.get(row).getPoster(1);
+    		case 6: return threads.get(row).getPoster(2);
+    		default: return null;
         }
     }
 
@@ -51,11 +45,7 @@ class StalledThreadTableModel extends AbstractTableModel {
 
     @Override
     public boolean isCellEditable(int row, int col) {
-        if (col == 2 || col == 3) {
-            return true;
-        } else {
-            return false;
-        }
+        return col == 2 || col == 3;
     }
 
     @Override

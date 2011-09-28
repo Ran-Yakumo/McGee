@@ -11,13 +11,12 @@ import javax.swing.table.AbstractTableModel;
 class PlayerTableModel extends AbstractTableModel {
 
     private static final long serialVersionUID = 7559688232320866013L;
-    String[] columnNames = { "Main", "Alt", "Secondary", "Active Threads", "Last IC Post Time", "Last IC Post Thread",
+    String[] columnNames = { "Main", "Alt", "Active Threads", "Last IC Post Time", "Last IC Post Thread",
             "Last IC Post Board", "Stalled Threads", "Strikes", "Consecutive Scans Passed", "On Hiatus",
             "Hiatus Weeks Remaining" };
     private static ArrayList<Player> players = new ArrayList<Player>();
     private static HashMap<String, Player> mainMap = new HashMap<String, Player>();
     private static HashMap<String, Player> altMap = new HashMap<String, Player>();
-    private static HashMap<String, Player> secMap = new HashMap<String, Player>();
 
     public int getColumnCount() {
         return columnNames.length;
@@ -43,7 +42,7 @@ class PlayerTableModel extends AbstractTableModel {
 
     @Override
     public boolean isCellEditable(int row, int col) {
-        if (col < 4 || col > 7) {
+        if (col < 3 || col > 6) {
             return true;
         }
         return false;
@@ -51,17 +50,13 @@ class PlayerTableModel extends AbstractTableModel {
 
     @Override
     public void setValueAt(Object value, int row, int col) {
-        // If this is the main, alt, or secondary, update the mapping
-        // appropriately
+        // If this is the main or alt, update the mapping appropriately
         if (col == 0) {
             mainMap.remove(players.get(row).getMain());
             mainMap.put((String) value, players.get(row));
         } else if (col == 1) {
             altMap.remove(players.get(row).getAlt());
             altMap.put((String) value, players.get(row));
-        } else if (col == 2) {
-            secMap.remove(players.get(row).getSec());
-            secMap.put((String) value, players.get(row));
         }
 
         players.get(row).setValue(col, value);
@@ -76,7 +71,7 @@ class PlayerTableModel extends AbstractTableModel {
         }
 
         // Get the name of the player's main and test the name map
-        if (mainMap.containsKey(in) || altMap.containsKey(in) || secMap.containsKey(in)) {
+        if (mainMap.containsKey(in) || altMap.containsKey(in)) {
             return true;
         }
 
@@ -91,8 +86,6 @@ class PlayerTableModel extends AbstractTableModel {
             return mainMap.get(in);
         } else if (altMap.containsKey(in)) {
             return altMap.get(in);
-        } else if (secMap.containsKey(in)) {
-            return secMap.get(in);
         } else {
             return null;
         }
@@ -104,7 +97,6 @@ class PlayerTableModel extends AbstractTableModel {
         // Update the mappings and create the player object
         mainMap.put(toAdd.getMain(), toAdd);
         altMap.put(toAdd.getAlt(), toAdd);
-        secMap.put(toAdd.getSec(), toAdd);
 
         // Insert the player into the table
         players.add(toAdd);
@@ -125,7 +117,6 @@ class PlayerTableModel extends AbstractTableModel {
         // Update the mappings
         mainMap.remove(toDrop.getMain());
         altMap.remove(toDrop.getAlt());
-        secMap.remove(toDrop.getSec());
 
         // Update the table
         players.remove(toDrop);
@@ -186,7 +177,6 @@ class PlayerTableModel extends AbstractTableModel {
                 // Output this player's parameters to the file
                 outFile.write(current.getMain() + "\r\n");
                 outFile.write(current.getAlt() + "\r\n");
-                outFile.write(current.getSec() + "\r\n");
                 outFile.write(current.getThreads() + "\r\n");
                 outFile.write(current.getLastPostTime() + "\r\n");
                 outFile.write(current.getLastPostThread() + "\r\n");

@@ -198,14 +198,6 @@ public class GUI {
         final JTextField alt = new JTextField("", 50);
         panel.add(alt, BorderLayout.CENTER);
         dialog.add(panel);
-        // Asks for the new player's secondary
-        panel = new JPanel();
-        panel.add(new JLabel("Player Secondary Alt (Leave blank for no secondary alt.)"), BorderLayout.CENTER);
-        dialog.add(panel);
-        panel = new JPanel();
-        final JTextField sec = new JTextField("", 50);
-        panel.add(sec, BorderLayout.CENTER);
-        dialog.add(panel);
 
         // Adds OK and cancel buttons
         panel = new JPanel();
@@ -222,7 +214,6 @@ public class GUI {
                     // save a new table
                     if (!main.getText().trim().equals("")) {
                         String altText;
-                        String secText;
 
                         // Parse the Alt field
                         if (alt.getText().trim().equals("")) {
@@ -231,15 +222,8 @@ public class GUI {
                             altText = alt.getText().trim();
                         }
 
-                        // Parse the Secondary Alt field
-                        if (sec.getText().trim().equals("")) {
-                            secText = "None";
-                        } else {
-                            secText = sec.getText().trim();
-                        }
-
-                        playerTableModel.addPlayer(new Player(main.getText().trim(), altText, secText, 0, "", "", "",
-                                0, 0, false, 4));
+                        playerTableModel.addPlayer(new Player(main.getText().trim(), altText, 0, "", "", "", 0, 0,
+                                false, 4));
                     } // If there is some error in the input, output a message
                       // to that effect, and make no changes
                     else {

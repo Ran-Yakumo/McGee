@@ -155,7 +155,6 @@ public class Main {
                 // Allocate resources and start by reading in the player's name
                 String main;
                 String alt;
-                String sec;
                 int threads;
                 String lastPostTime;
                 String lastPostThread;
@@ -168,7 +167,6 @@ public class Main {
                 // Read in the player's characters
                 main = S.trim();
                 alt = InFile.readLine().trim();
-                sec = InFile.readLine().trim();
 
                 // Read in the number of threads that the player was in at the
                 // last scan
@@ -207,7 +205,7 @@ public class Main {
                 hiatusWeeksRemaining = Integer.parseInt(S);
 
                 // Create Player object and add it to the table
-                GUI.playerTableModel.addPlayer(new Player(main, alt, sec, threads, lastPostTime, lastPostThread,
+                GUI.playerTableModel.addPlayer(new Player(main, alt, threads, lastPostTime, lastPostThread,
                         lastPostBoard, strikes, goodScans, onHiatus, hiatusWeeksRemaining));
             }
         } catch (Exception e) {

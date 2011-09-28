@@ -1,7 +1,6 @@
 1435169
 Alice Margatroid
 Keine Kamishirasawa
-None
 5
 Sat Sep 24, 2011 4:46 am
 [Ask First]Secrets of a Puppeteer
@@ -11,7 +10,6 @@ The Forest of Magic
 false
 1
 Aya Shameimaru
-None
 None
 2
 Sat Sep 24, 2011 2:30 pm
@@ -23,7 +21,6 @@ false
 3
 Byakuren Hijiri
 Yamame Kurodani
-None
 4
 Sat Sep 24, 2011 6:51 am
 [Full!] For a flower-falling season
@@ -33,7 +30,6 @@ The Gensokyo Plains
 false
 4
 Chen
-None
 None
 4
 Wed Sep 21, 2011 5:10 pm
@@ -45,7 +41,6 @@ false
 4
 Cirno
 None
-None
 1
 Sat Sep 24, 2011 2:41 pm
 [Open]A knoll, A lake, and A smoke
@@ -56,7 +51,6 @@ false
 3
 Elis
 Sariel
-None
 3
 Fri Sep 23, 2011 1:05 pm
 [TEMP-Private] Freakin' Fridays at the Lake of Blood
@@ -67,7 +61,6 @@ false
 4
 Flandre Scarlet
 Medicine Melancholy
-None
 1
 Sat Sep 24, 2011 2:04 am
 [FULL] We have the technology...
@@ -77,7 +70,6 @@ The Forest of Magic
 false
 2
 Fujiwara no Mokou
-None
 None
 1
 Fri Sep 23, 2011 2:55 pm
@@ -89,7 +81,6 @@ false
 3
 Hong Meiling
 Hieda no Akyuu
-None
 2
 Thu Sep 22, 2011 7:27 pm
 [Ask First] One-Hundred and Eight Form
@@ -99,7 +90,6 @@ The Scarlet Devil Mansion
 false
 3
 Ichirin Kumoi
-None
 None
 1
 Mon Sep 19, 2011 6:06 pm
@@ -111,7 +101,6 @@ false
 4
 Kaguya Houraisan
 None
-None
 2
 Fri Sep 23, 2011 8:01 am
 [Tournament Round 3] Sakuya Izayoi vs. Kaguya Houraisan
@@ -122,7 +111,6 @@ false
 4
 Koakuma
 Yumeko
-None
 4
 Thu Sep 22, 2011 12:15 pm
 [Tournament Round 3] Utsuho Reiuji vs. Yumeko
@@ -132,7 +120,6 @@ Spellcard Tournament Arena (Event)
 false
 3
 Koishi Komeiji
-None
 None
 0
 Fri Sep 16, 2011 5:22 pm
@@ -144,7 +131,6 @@ false
 2
 Komachi Onozuka
 Mamizou Futatsuiwa
-None
 1
 Sat Sep 24, 2011 12:34 pm
 [Ask First] Ichirin's Secret
@@ -154,7 +140,6 @@ The Human Village
 false
 1
 Kurumi
-None
 None
 3
 Sat Sep 24, 2011 10:40 am
@@ -166,7 +151,6 @@ false
 0
 Letty Whiterock
 None
-None
 1
 Fri Sep 23, 2011 6:01 am
 [Open] The Lonely Ghost in the Netherworld Tower
@@ -177,7 +161,6 @@ false
 4
 Luna Child
 Shou Toramaru
-None
 2
 Fri Sep 23, 2011 8:17 am
 [Ask First] The Witch's Brew
@@ -187,7 +170,6 @@ The Forest of Magic
 false
 0
 Marisa Kirisame
-None
 None
 6
 Wed Sep 21, 2011 7:17 pm
@@ -199,7 +181,6 @@ false
 3
 Mima
 Rika
-None
 2
 Wed Sep 21, 2011 3:47 am
 [Private] See No Evil
@@ -210,7 +191,6 @@ false
 2
 Mystia Lorelei
 Star Sapphire
-None
 6
 Fri Sep 23, 2011 5:10 am
 [Full] A New Idol in Gensokyo? Part 2
@@ -220,7 +200,6 @@ The Youkai Mountain
 false
 4
 Orange
-None
 None
 1
 Mon Sep 19, 2011 8:35 am
@@ -232,7 +211,6 @@ false
 4
 Parsee Mizuhashi
 None
-None
 1
 Wed Sep 21, 2011 11:07 am
 (Ask First) Parsee's Search
@@ -242,7 +220,6 @@ The Hell of Blazing Fires
 false
 4
 Patchouli Knowledge
-None
 None
 2
 Thu Sep 22, 2011 12:55 am
@@ -254,7 +231,6 @@ false
 4
 Ran Yakumo
 None
-None
 0
 Thu Sep 15, 2011 12:45 am
 [Invite Only] Tea in the White Tower
@@ -264,7 +240,6 @@ The Netherworld
 false
 4
 Reimu Hakurei
-None
 None
 2
 Sun Sep 18, 2011 10:54 pm
@@ -276,7 +251,6 @@ false
 4
 Remilia Scarlet
 None
-None
 2
 Sat Sep 24, 2011 2:10 am
 Scarlet Devil Sleepover [Full]
@@ -287,7 +261,6 @@ false
 4
 Rumia
 Ruukoto
-None
 0
 Sat Sep 17, 2011 12:09 pm
 [Open]A knoll, A lake, and A smoke
@@ -298,7 +271,6 @@ false
 2
 Sakuya Izayoi
 Reisen Udongein Inaba
-None
 4
 Fri Sep 23, 2011 1:49 pm
 [Tournament Round 3] Sakuya Izayoi vs. Kaguya Houraisan
@@ -309,7 +281,6 @@ false
 1
 Satori Komeiji
 Mononobe no Futo
-None
 0
 Sat Sep 17, 2011 6:27 am
 [Private] Birdkeeping
@@ -320,7 +291,6 @@ false
 0
 Shikieiki Yamaxanadu
 Sunny Milk
-None
 4
 Thu Sep 22, 2011 11:23 am
 [Open] Summer Fun, Frolic, and Fantastic Frivolity
@@ -330,7 +300,6 @@ The Youkai Mountain
 false
 1
 Shingyoku
-None
 None
 0
 Thu Sep 15, 2011 4:01 pm
@@ -342,7 +311,6 @@ false
 4
 Shinki
 Soga no Tojiko
-None
 3
 Fri Sep 23, 2011 7:12 pm
 [Ask First] Reunion in the Forest
@@ -352,7 +320,6 @@ The Forest of Magic
 false
 4
 Shizuha Aki
-None
 None
 0
 Tue Sep 13, 2011 10:35 am
@@ -364,7 +331,6 @@ false
 0
 Tewi Inaba
 Toyosatomimi no Miko
-None
 1
 Mon Sep 19, 2011 10:48 pm
 [Ask First] The Saint, The Immortal, and the Ghost Princess
@@ -374,7 +340,6 @@ The Bamboo Forest of the Lost
 false
 4
 Utsuho Reiuji
-None
 None
 1
 Fri Sep 23, 2011 12:57 pm
@@ -386,7 +351,6 @@ false
 2
 Yoshika Miyako
 Meira
-None
 1
 Tue Sep 20, 2011 5:57 pm
 [Ask First] The Doctor is Inaba
@@ -397,7 +361,6 @@ false
 0
 Youmu Konpaku
 None
-None
 0
 
 
@@ -407,7 +370,6 @@ None
 false
 4
 Youmu Konpaku
-None
 None
 1
 Mon Sep 19, 2011 10:24 pm
@@ -419,7 +381,6 @@ false
 4
 Yuka Kazami
 None
-None
 0
 Tue Aug 23, 2011 8:45 am
 [Mostly Full] A Fanciful Flower Forgathering
@@ -429,7 +390,6 @@ The Forest of Magic
 false
 4
 Yukari Yakumo
-None
 None
 1
 Wed Sep 21, 2011 5:00 am
@@ -441,7 +401,6 @@ false
 0
 Yuugi Hoshiguma
 None
-None
 2
 Tue Sep 20, 2011 12:41 pm
 (Ask First) Parsee's Search
@@ -451,7 +410,6 @@ The Hell of Blazing Fires
 false
 3
 Yuyuko Saigyouji
-None
 None
 2
 Thu Sep 22, 2011 2:05 am

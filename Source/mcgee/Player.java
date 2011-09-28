@@ -8,7 +8,6 @@ public class Player implements Comparable<Player> {
     // Working private members
     private String main;
     private String alt;
-    private String sec;
     private int threads;
     private int strikes;
     private int goodScans;
@@ -23,12 +22,10 @@ public class Player implements Comparable<Player> {
     private boolean expiredHiatus = false;
     private int index = -1;
 
-    public Player(String inMain, String inAlt, String inSec, int inThreads, String inLastPostTime,
-            String inLastPostThread, String inLastPostBoard, int inStrikes, int inGoodScans, boolean inOnHiatus,
-            int inHiatusWeeksRemaining) {
+    public Player(String inMain, String inAlt, int inThreads, String inLastPostTime, String inLastPostThread,
+            String inLastPostBoard, int inStrikes, int inGoodScans, boolean inOnHiatus, int inHiatusWeeksRemaining) {
         main = inMain;
         alt = inAlt;
-        sec = inSec;
         threads = inThreads;
         lastPostTime = inLastPostTime;
         lastPostThread = inLastPostThread;
@@ -45,10 +42,6 @@ public class Player implements Comparable<Player> {
 
     public String getAlt() {
         return alt;
-    }
-
-    public String getSec() {
-        return sec;
     }
 
     public int getThreads() {
@@ -131,10 +124,6 @@ public class Player implements Comparable<Player> {
         alt = in;
     }
 
-    public void setSec(String in) {
-        sec = in;
-    }
-
     public void setThreads(int inThreads) {
         threads = inThreads;
     }
@@ -209,24 +198,22 @@ public class Player implements Comparable<Player> {
         } else if (col == 1) {
             return getAlt();
         } else if (col == 2) {
-            return getSec();
-        } else if (col == 3) {
             return getThreads();
-        } else if (col == 4) {
+        } else if (col == 3) {
             return getLastPostTime();
-        } else if (col == 5) {
+        } else if (col == 4) {
             return getLastPostThread();
-        } else if (col == 6) {
+        } else if (col == 5) {
             return getLastPostBoard();
-        } else if (col == 7) {
+        } else if (col == 6) {
             return getStalledThreads();
-        } else if (col == 8) {
+        } else if (col == 7) {
             return getStrikes();
-        } else if (col == 9) {
+        } else if (col == 8) {
             return getGoodScans();
-        } else if (col == 10) {
+        } else if (col == 9) {
             return getOnHiatus();
-        } else if (col == 11) {
+        } else if (col == 10) {
             return getHiatusWeeksRemaining();
         }
         return null;
@@ -238,18 +225,16 @@ public class Player implements Comparable<Player> {
         } else if (col == 1) {
             setAlt((String) in);
         } else if (col == 2) {
-            setSec((String) in);
-        } else if (col == 3) {
             setThreads((Integer) in);
-        } else if (col > 3 && col < 8) {
+        } else if (col > 2 && col < 7) {
             return;
-        } else if (col == 8) {
+        } else if (col == 7) {
             setStrikes((Integer) in);
-        } else if (col == 9) {
+        } else if (col == 8) {
             setGoodScans((Integer) in);
-        } else if (col == 10) {
+        } else if (col == 9) {
             setOnHiatus((Boolean) in);
-        } else if (col == 11) {
+        } else if (col == 10) {
             setHiatusWeeksRemaining((Integer) in);
         }
     }
@@ -262,9 +247,9 @@ public class Player implements Comparable<Player> {
 
         // Update the table with stalled threads, strikes, and consecutive good
         // scans
+        GUI.playerTableModel.fireTableCellUpdated(index, 6);
         GUI.playerTableModel.fireTableCellUpdated(index, 7);
         GUI.playerTableModel.fireTableCellUpdated(index, 8);
-        GUI.playerTableModel.fireTableCellUpdated(index, 9);
     }
 
     // Gives a strike to a player and takes care of all ramifications of doing
@@ -275,9 +260,9 @@ public class Player implements Comparable<Player> {
 
         // Update the table with stalled threads, strikes, and consecutive good
         // scans
+        GUI.playerTableModel.fireTableCellUpdated(index, 6);
         GUI.playerTableModel.fireTableCellUpdated(index, 7);
         GUI.playerTableModel.fireTableCellUpdated(index, 8);
-        GUI.playerTableModel.fireTableCellUpdated(index, 9);
     }
 
     // Updates the Last IC Post data for this player
@@ -286,9 +271,9 @@ public class Player implements Comparable<Player> {
             lastPostTime = inTime;
             lastPostThread = inThread;
             lastPostBoard = inBoard;
+            GUI.playerTableModel.fireTableCellUpdated(index, 3);
             GUI.playerTableModel.fireTableCellUpdated(index, 4);
             GUI.playerTableModel.fireTableCellUpdated(index, 5);
-            GUI.playerTableModel.fireTableCellUpdated(index, 6);
         }
     }
 

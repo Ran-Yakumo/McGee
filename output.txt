@@ -24,8 +24,6 @@ Stalled Threads:
 {Spellcard Tournament Arena (Event)} ([Tournament Round 3] Utsuho Reiuji vs. Yumeko) Utsuho Reiuji Yumeko Utsuho Reiuji Yumeko Utsuho Reiuji Yumeko 
 {Spellcard Tournament Arena (Event)} (Summary of Round 2) Patchouli Knowledge 
 {Spellcard Tournament Arena (Event)} (Summary of Round 1) Patchouli Knowledge 
-{Departures Terminal} (Official Character Drop Form) Touhou RP 
-{Departures Terminal} (Disappearing Doll) Hourai 
 
 Overlimit Posts:
 Shinki {The Youkai Mountain} [Ask First]Alright, Let's Try This Again... 
@@ -39,6 +37,7 @@ Shingyoku {The Youkai Mountain} [Open] Summer Fun, Frolic, and Fantastic Frivoli
 
 Characters removed From Hiatus Becuase they Have No Remaining Hiatus Time:
 
-Players Who Have not Posted in Three Weeks or More:
+Players Who Have not Posted in Two Weeks or More:
+Shizuha Aki
 Youmu Konpaku
 Yuka Kazami

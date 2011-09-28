@@ -269,6 +269,7 @@ public class Main {
 
             // Cut off all forums but the IC ones
             resource = resource.substring(resource.indexOf("In Character"));
+            resource = resource.substring(0,resource.indexOf("Misc. Section"));
 
             // Find the IC forums, and add them to the list
             Pattern ForumPattern = Pattern.compile("<a href=\"([^\"]*)\" class=\"forumtitle\">([^<]*)</a>");

@@ -1,540 +1,463 @@
-1193291
+1435169
 Alice Margatroid
+Keine Kamishirasawa
 None
-None
-0
-Wed Mar 02, 2011 4:41 pm
-[Open] Expansion of Divine Prerogative
+5
+Sat Sep 24, 2011 4:46 am
+[Ask First]Secrets of a Puppeteer
 The Forest of Magic
 0
-11
+41
 false
-4
+1
 Aya Shameimaru
-Hourai
+None
 None
 2
-Sat Apr 09, 2011 12:05 pm
-[Ask First] Unholy Being in a Holy Place
-The Forest of Magic
+Sat Sep 24, 2011 2:30 pm
+[Open] A Usual Night at the Stand?
+The Youkai Mountain
 0
-19
+45
 false
-4
+3
 Byakuren Hijiri
 Yamame Kurodani
 None
+4
+Sat Sep 24, 2011 6:51 am
+[Full!] For a flower-falling season
+The Gensokyo Plains
 0
-Mon Apr 04, 2011 12:49 pm
-[Invite Only] Of Youkai and Humans
-The Bamboo Forest of the Lost
-0
-17
-true
-3
+42
+false
+4
 Chen
 None
 None
-2
-Thu Apr 07, 2011 5:51 pm
-[Private] Borders of Curiosity and Stupidity
-The Netherworld
+4
+Wed Sep 21, 2011 5:10 pm
+[Open] Sick as a Cat
+The Forest of Magic
 0
-12
+39
 false
 4
 Cirno
 None
 None
 1
-Fri Apr 08, 2011 9:20 pm
-[Open]The Need for More Business
-The Bamboo Forest of the Lost
+Sat Sep 24, 2011 2:41 pm
+[Open]A knoll, A lake, and A smoke
+The Scarlet Devil Mansion
 0
-19
+44
 false
-4
+3
 Elis
+Sariel
 None
-None
-2
-Sat Apr 09, 2011 11:53 am
-[Open-4] Liminal Messages
-The Gensokyo Plains
+3
+Fri Sep 23, 2011 1:05 pm
+[TEMP-Private] Freakin' Fridays at the Lake of Blood
+The Forest of Magic
 0
-18
+42
 false
 4
 Flandre Scarlet
 Medicine Melancholy
 None
-2
-Sat Apr 09, 2011 6:10 am
+1
+Sat Sep 24, 2011 2:04 am
 [FULL] We have the technology...
 The Forest of Magic
 0
-16
+40
 false
-4
+2
 Fujiwara no Mokou
-Parsee Mizuhashi
 None
-0
-Tue Mar 29, 2011 3:22 pm
-[Invite Only] Water Water Everywhere
+None
+1
+Fri Sep 23, 2011 2:55 pm
+[Invite Only] Memories of the Phoenix
 The Bamboo Forest of the Lost
 0
-19
+11
 false
-4
+3
 Hong Meiling
+Hieda no Akyuu
 None
-None
-0
-Fri Mar 11, 2011 10:08 pm
-[Closed] A Fireside Chat
+2
+Thu Sep 22, 2011 7:27 pm
+[Ask First] One-Hundred and Eight Form
 The Scarlet Devil Mansion
 0
-9
-true
-2
+34
+false
+3
 Ichirin Kumoi
 None
 None
-2
-Fri Apr 08, 2011 6:39 pm
-[Ask First] Journey to Enlightment - First Steps
-The Youkai Mountain
+1
+Mon Sep 19, 2011 6:06 pm
+[Ask First] Ichirin's Secret
+The Human Village
 0
-19
-false
-4
-Iku Nagae
-None
-None
-0
-Mon Apr 04, 2011 2:02 pm
-[Open-4] Liminal Messages
-The Gensokyo Plains
-0
-17
+46
 false
 4
 Kaguya Houraisan
 None
 None
-0
-Wed Mar 30, 2011 6:05 am
-[Lunar Festival] A Lunar Party in Eientei~
-The Bamboo Forest of the Lost
-0
-19
-false
-4
-Keine Kamishirasawa
-None
-None
 2
-Fri Apr 08, 2011 1:11 pm
-[Open] A maid, a bunny and a hakutaku enter a noodle shop
-The Bamboo Forest of the Lost
+Fri Sep 23, 2011 8:01 am
+[Tournament Round 3] Sakuya Izayoi vs. Kaguya Houraisan
+Spellcard Tournament Arena (Event)
 0
-18
+43
 false
 4
 Koakuma
+Yumeko
 None
-None
-0
-Sat Apr 02, 2011 7:11 pm
-[Holiday] Party Pastry Preparations
-The Scarlet Devil Mansion
-0
-11
-false
 4
-Kogasa Tatara
-Kanako Yasaka
-None
-1
-Mon Apr 04, 2011 7:46 pm
-Don't mean to spook ya, but I'm giving up the ghost.
-Departures Terminal
+Thu Sep 22, 2011 12:15 pm
+[Tournament Round 3] Utsuho Reiuji vs. Yumeko
+Spellcard Tournament Arena (Event)
 0
-15
+37
 false
-4
+3
 Koishi Komeiji
 None
 None
 0
-Thu Mar 31, 2011 7:51 pm
-[Full] Jumping Spiders
-The Forest of Magic
+Fri Sep 16, 2011 5:22 pm
+[Private] Birdkeeping
+The Hell of Blazing Fires
 0
-19
+43
 false
-4
+2
 Komachi Onozuka
+Mamizou Futatsuiwa
 None
-None
+1
+Sat Sep 24, 2011 12:34 pm
+[Ask First] Ichirin's Secret
+The Human Village
 0
-Thu Mar 24, 2011 7:34 pm
-[Open]A knoll, A lake, and A smoke
-The Scarlet Devil Mansion
-0
-16
+37
 false
-4
+1
 Kurumi
 None
 None
+3
+Sat Sep 24, 2011 10:40 am
+[Open] Kotone comes to the Mansion
+The Scarlet Devil Mansion
 0
-Sun Apr 03, 2011 2:52 am
-[Open]The Need for More Business
-The Bamboo Forest of the Lost
-0
-19
+43
 false
-4
+0
 Letty Whiterock
 None
 None
-2
-Sat Apr 09, 2011 8:50 am
-[Open] The Early Season
-The Youkai Mountain
+1
+Fri Sep 23, 2011 6:01 am
+[Open] The Lonely Ghost in the Netherworld Tower
+The Netherworld
 0
-16
-false
-4
-Lily White
-None
-None
-0
-Sun Mar 20, 2011 6:36 am
-[Private] The New Annual Seasonal Gathering : Winter
-The Youkai Mountain
-0
-15
+43
 false
 4
 Luna Child
 Shou Toramaru
 None
-0
-Wed Mar 30, 2011 8:25 am
-[Festival of Aki] Single White Shrine Seeks Maiden
-The Youkai Mountain
-0
-17
-true
 2
-Lyrica Prismriver
-None
-None
+Fri Sep 23, 2011 8:17 am
+[Ask First] The Witch's Brew
+The Forest of Magic
 0
-Sat Apr 02, 2011 7:40 pm
-Friends in Immortality [Open]
-The Gensokyo Plains
-0
-19
+38
 false
-4
+0
 Marisa Kirisame
 None
 None
+6
+Wed Sep 21, 2011 7:17 pm
+[Full] A New Idol in Gensokyo? Part 2
+The Youkai Mountain
 0
-Fri Apr 01, 2011 8:29 pm
-[Open] Yama's Motivational Counsel and Confession Booth
-The Gensokyo Plains
-0
-18
+44
 false
-4
+3
 Mima
 Rika
 None
-1
-Sat Apr 09, 2011 12:53 pm
-[Private] Experiments in Romance
+2
+Wed Sep 21, 2011 3:47 am
+[Private] See No Evil
 The Forest of Magic
 0
-19
+42
 false
-4
-Minoriko Aki
+2
+Mystia Lorelei
+Star Sapphire
 None
-None
-0
-Sat Feb 26, 2011 2:40 pm
-[Private] The New Annual Seasonal Gathering : Winter
+6
+Fri Sep 23, 2011 5:10 am
+[Full] A New Idol in Gensokyo? Part 2
 The Youkai Mountain
 0
-14
-true
-2
-Momiji Inubashiri
-None
-None
-0
-Mon Apr 04, 2011 12:18 am
-[INVITE ONLY]Conflated and Nonintrusive Detection
-The Netherworld
-0
-9
-false
-4
-Murasa Minamitsu
-None
-None
-0
-Thu Mar 31, 2011 8:25 pm
-[Invite Only] Water Water Everywhere
-The Bamboo Forest of the Lost
-0
-19
-false
-4
-Mystia Lorelei
-Nazrin
-None
-0
-Mon Apr 04, 2011 10:25 am
-[Private] Experiments in Romance
-The Forest of Magic
-0
-16
-true
-3
-Nitori Kawashiro
-None
-None
-1
-Fri Apr 08, 2011 11:41 am
-[Full] Curiosity Killed the Kappa?
-The Forest of Magic
-0
-13
-false
-4
-Nue Houjuu
-Yumemi Okazaki
-None
-1
-Fri Apr 08, 2011 11:13 am
-[Open] Devil's Day Off
-The Gensokyo Plains
-0
-15
+43
 false
 4
 Orange
 None
 None
+1
+Mon Sep 19, 2011 8:35 am
+[Closed] Sisterly Care
+The Human Village
 0
-Wed Mar 30, 2011 1:27 am
-[Holiday] Party Pastry Preparations
-The Scarlet Devil Mansion
+45
+false
+4
+Parsee Mizuhashi
+None
+None
+1
+Wed Sep 21, 2011 11:07 am
+(Ask First) Parsee's Search
+The Hell of Blazing Fires
 0
-18
+4
 false
 4
 Patchouli Knowledge
 None
 None
-1
-Thu Apr 07, 2011 4:23 am
-[Private] Expansive Librarium Renovation
+2
+Thu Sep 22, 2011 12:55 am
+[Ask First] A Study in Magic, Lesson One: Required Reading
 The Scarlet Devil Mansion
 0
-17
+43
 false
 4
 Ran Yakumo
 None
 None
-1
-Tue Apr 05, 2011 1:03 am
-[Full] Curiosity Killed the Kappa?
-The Forest of Magic
 0
-16
+Thu Sep 15, 2011 12:45 am
+[Invite Only] Tea in the White Tower
+The Netherworld
+0
+42
+false
+4
+Reimu Hakurei
+None
+None
+2
+Sun Sep 18, 2011 10:54 pm
+[Full] A New Idol in Gensokyo? Part 2
+The Youkai Mountain
+0
+7
 false
 4
 Remilia Scarlet
 None
 None
-1
-Wed Apr 06, 2011 8:57 pm
-[Holiday] Party Pastry Preparations
+2
+Sat Sep 24, 2011 2:10 am
+Scarlet Devil Sleepover [Full]
 The Scarlet Devil Mansion
 0
-19
-false
-4
-Rikako Asakura
-Shinki
-None
-3
-Fri Apr 08, 2011 10:41 pm
-[Open] Seeking the aid of Moriya
-The Youkai Mountain
-0
-19
+45
 false
 4
 Rumia
 Ruukoto
 None
+0
+Sat Sep 17, 2011 12:09 pm
+[Open]A knoll, A lake, and A smoke
+The Scarlet Devil Mansion
+0
+41
+false
 2
-Fri Apr 08, 2011 2:13 pm
-[Full] Curiosity Killed the Kappa?
-The Forest of Magic
-0
-19
-false
-4
 Sakuya Izayoi
+Reisen Udongein Inaba
 None
-None
-3
-Fri Apr 08, 2011 6:43 pm
-[Open] A maid, a bunny and a hakutaku enter a noodle shop
-The Bamboo Forest of the Lost
-0
-11
-false
 4
-Sanae Kochiya
-None
-None
+Fri Sep 23, 2011 1:49 pm
+[Tournament Round 3] Sakuya Izayoi vs. Kaguya Houraisan
+Spellcard Tournament Arena (Event)
 0
-Mon Apr 04, 2011 1:14 pm
-[Open] Seeking the aid of Moriya
-The Youkai Mountain
-0
-16
+34
 false
-4
+1
+Satori Komeiji
+Mononobe no Futo
+None
+0
+Sat Sep 17, 2011 6:27 am
+[Private] Birdkeeping
+The Hell of Blazing Fires
+0
+31
+false
+0
 Shikieiki Yamaxanadu
 Sunny Milk
 None
+4
+Thu Sep 22, 2011 11:23 am
+[Open] Summer Fun, Frolic, and Fantastic Frivolity
+The Youkai Mountain
+0
+42
+false
+1
+Shingyoku
+None
+None
+0
+Thu Sep 15, 2011 4:01 pm
+[Open] Summer Fun, Frolic, and Fantastic Frivolity
+The Youkai Mountain
+0
+22
+false
+4
+Shinki
+Soga no Tojiko
+None
 3
-Fri Apr 08, 2011 9:38 am
-[Open] We Are Spies: Part 1 - Techno-Babble
+Fri Sep 23, 2011 7:12 pm
+[Ask First] Reunion in the Forest
 The Forest of Magic
 0
-19
+5
 false
 4
 Shizuha Aki
 None
 None
 0
-Mon Apr 04, 2011 10:28 am
-[Ask First] Journey to Enlightment - First Steps
+Tue Sep 13, 2011 10:35 am
+[Open] A Usual Night at the Stand?
 The Youkai Mountain
 0
-19
+42
 false
-4
-Suika Ibuki
-Shanghai
-Meira
-2
-Thu Apr 07, 2011 6:21 pm
-[Open] Sick as a Cat
-The Forest of Magic
 0
-16
-false
-4
-Suwako Moriya
-None
-None
-1
-Thu Apr 07, 2011 7:57 pm
-[Open] In Search of Sake: Take Two
-The Hell of Blazing Fires
-0
-4
-false
-4
-Tenshi Hinanai
-None
-None
-0
-Thu Mar 24, 2011 7:23 am
-[Semi-Open] A Hero's Plan: Vampire Extermination!
-The Scarlet Devil Mansion
-0
-8
-true
-3
 Tewi Inaba
+Toyosatomimi no Miko
+None
+1
+Mon Sep 19, 2011 10:48 pm
+[Ask First] The Saint, The Immortal, and the Ghost Princess
+The Bamboo Forest of the Lost
+0
+45
+false
+4
+Utsuho Reiuji
 None
 None
 1
-Wed Apr 06, 2011 6:23 pm
-[Open] We Are Spies: Part 1 - Techno-Babble
-The Forest of Magic
-0
-18
-false
-4
-Wriggle Nightbug
-None
-None
-0
-Mon Mar 28, 2011 7:37 pm
-[Full] Flandre's Inferno
+Fri Sep 23, 2011 12:57 pm
+[Private] Birdkeeping
 The Hell of Blazing Fires
 0
-16
+37
+false
+2
+Yoshika Miyako
+Meira
+None
+1
+Tue Sep 20, 2011 5:57 pm
+[Ask First] The Doctor is Inaba
+The Bamboo Forest of the Lost
+0
+37
+false
+0
+Youmu Konpaku
+None
+None
+0
+
+
+
+0
+2
+false
+4
+Youmu Konpaku
+None
+None
+1
+Mon Sep 19, 2011 10:24 pm
+[Invite Only] Tea in the White Tower
+The Netherworld
+0
+1
 false
 4
 Yuka Kazami
 None
 None
 0
-Wed Mar 30, 2011 12:06 am
-[Private] The New Annual Seasonal Gathering : Winter
-The Youkai Mountain
+Tue Aug 23, 2011 8:45 am
+[Mostly Full] A Fanciful Flower Forgathering
+The Forest of Magic
 0
-10
+19
 false
 4
 Yukari Yakumo
 None
 None
 1
-Thu Apr 07, 2011 2:25 pm
-[INVITE ONLY]Conflated and Nonintrusive Detection
+Wed Sep 21, 2011 5:00 am
+[Invite Only] Tea in the White Tower
 The Netherworld
 0
-19
+43
 false
-4
-Yuugi Hoshiguma
-Reimu Hakurei
-None
-1
-Sat Apr 09, 2011 9:22 am
-[Ask First] Youkai in the House
-The Bamboo Forest of the Lost
 0
-17
+Yuugi Hoshiguma
+None
+None
+2
+Tue Sep 20, 2011 12:41 pm
+(Ask First) Parsee's Search
+The Hell of Blazing Fires
+0
+43
 false
-4
+3
 Yuyuko Saigyouji
 None
 None
+2
+Thu Sep 22, 2011 2:05 am
+[Invite Only] Tea in the White Tower
+The Netherworld
 0
-Sat Mar 26, 2011 10:09 am
-[Open] Yama's Motivational Counsel and Confession Booth
-The Gensokyo Plains
-0
-10
+4
 false
-3
+4

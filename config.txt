@@ -4,11 +4,11 @@ This flag allows you to specify the minimum number of posts since the last scan 
 
 This flag is the username to send automated PM's from
 [AUTOPMUSER]
-Touhou RP
+Hong Meiling
 
 This flag is the password of the user to send automated PM's from
 [AUTOPMPASS]
-nope
+LOLNO
 
 This message is the default message to send to players.
 The sequence of characters "%activity" in the message will be replaced by an activity message (either a strike message or a strike removed message as appropriate).

@@ -199,9 +199,9 @@ class PlayerTableModel extends AbstractTableModel {
     public void DumpInactivePlayers(FileWriter OutFile) {
         try {
             // Dump the names of all offening players
-            OutFile.write("\r\nPlayers Who Have not Posted in Three Weeks or More:\r\n");
+            OutFile.write("\r\nPlayers Who Have not Posted in Two Weeks or More:\r\n");
             for (Player current : players) {
-                if (Main.CurrentTime - Utilities.ParseDateString(current.getLastPostTime()) > 30240) {
+                if (Main.CurrentTime - Utilities.ParseDateString(current.getLastPostTime()) > 20160) {
                     OutFile.write(current.getMain() + "\r\n");
                 }
             }

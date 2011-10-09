@@ -170,6 +170,7 @@ class PlayerTableModel extends AbstractTableModel {
         try {
             // Allocate resources
             FileWriter outFile = new FileWriter("players.txt");
+            outFile.write(Main.LastScanTime + "\r\n");
             outFile.write(Main.CurrentTime + "\r\n");
 
             // Output the current table to a file

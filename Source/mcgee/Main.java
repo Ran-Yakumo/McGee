@@ -15,13 +15,14 @@ import java.net.URL;
 //This class starts all of the threads doing their wonderful work.
 public class Main {
 
-    private static long LastScanTime;
     private static int MinThreadPosts;
     public static ArrayList<String> Overlimit = new ArrayList<String>();
     public static ArrayList<String> Placeholder = new ArrayList<String>();
     public static ArrayList<String> ExpiredHiatus = new ArrayList<String>();
     public static boolean scanDone = false;
     public static long CurrentTime;
+    public static long LastScanTime;
+    public static long LastLastScanTime;
 
     // Parses input from the config file
     public static void ReadInput() {
@@ -147,6 +148,8 @@ public class Main {
             InFile = new BufferedReader(new FileReader("players.txt"));
 
             // Read out the last scan time
+            S = InFile.readLine().trim();
+            LastLastScanTime = Long.parseLong(S);
             S = InFile.readLine().trim();
             LastScanTime = Long.parseLong(S);
             CurrentTime = LastScanTime;
@@ -383,7 +386,7 @@ public class Main {
 
                     // Check to be sure that this post is within the timing
                     // window
-                    if (Utilities.ParseDateString(PostMatcher.group(2).trim()) > LastScanTime) {
+                    if (Utilities.ParseDateString(PostMatcher.group(2).trim()) > LastLastScanTime) {
 
                         // Add this post to the timing window for counting the
                         // thread active
